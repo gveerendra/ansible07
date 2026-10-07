@@ -1,4 +1,11 @@
-- name: Print a standard message
-  ansible.builtin.debug:
-    msg: "Hello, world! The playbook is running successfully."
+---
+- name: Ansible Print Examples
+  hosts: localhost
+  gather_facts: yes
+  vars:
+    environment_type: "Production"
 
+  tasks:
+    - name: Task 1 - Print a simple string
+      ansible.builtin.debug:
+        msg: "Starting the system deployment checklist..."
