@@ -1,7 +1,7 @@
 ---
- -hosts:
+ -hosts: all
   tasks:
   -name: print helloworld
-   ansible.builtin.debug
+   ansible.builtin.debug:
     mgs: helloworld
    
