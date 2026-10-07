@@ -1,5 +1,4 @@
- -hosts : web
-  tasks :
-  -name : print web server
-   ansible.builtin.debug :
-    msg : "hello world"
+- name: Print a standard message
+  ansible.builtin.debug:
+    msg: "Hello, world! The playbook is running successfully."
+
