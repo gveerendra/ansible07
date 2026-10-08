@@ -1,7 +1,7 @@
 ---
  - name: hello world
    hosts: web
-   gather_facts: "true"
+   gather_facts: yes
    tasks: 
    - name: print hello world 
      ansible.builtin.debug:
