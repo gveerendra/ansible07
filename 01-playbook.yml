@@ -1,8 +1,8 @@
 
- -name: hello world
+ -name: hello w
   hosts: web
   tasks:
-  -name: print hello world
+  -name: pring web server
    ansible.builtin.debug:
      mgs: "hello world"
    
